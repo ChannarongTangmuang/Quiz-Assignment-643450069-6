@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textbox1 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // textbox1
+            // 
+            this.textbox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textbox1.Location = new System.Drawing.Point(24, 43);
+            this.textbox1.Multiline = true;
+            this.textbox1.Name = "textbox1";
+            this.textbox1.Size = new System.Drawing.Size(363, 335);
+            this.textbox1.TabIndex = 0;
+            this.textbox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(746, 449);
+            this.Controls.Add(this.textbox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private TextBox textbox1;
     }
 }
